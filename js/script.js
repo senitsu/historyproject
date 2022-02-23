@@ -69,7 +69,7 @@ monogatari.assets ('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
-
+	'cranes': 'cranes.jpeg',
 });
 
 
@@ -87,18 +87,22 @@ monogatari.script ({
 
 monogatari.component ('main-screen').template (() => {
     return `
+				<center>
 				<br/>
 				<br/>
 				<br/>
-        <h1>Put Your Title Here</h1>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+        <h1>The Cranes of Hiroshima</h1>
         <p>
         By Senya W.
         </p>
+				</center>
 				<br/>
-        <center>
-				<img src="assets/images/jettPX.gif">
-				<img src="assets/images/phoenixPX.gif">
-        </center>
 
         <main-menu></main-menu>
     `;
