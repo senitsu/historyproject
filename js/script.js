@@ -105,7 +105,7 @@ monogatari.script ({
 	],
 
 	'DestructionHiroshima':[
-		'vibrate 200'
+		'vibrate 200 100 150 50 200 300'
 	],
 
 	'Aftermath':[
