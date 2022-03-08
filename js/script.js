@@ -70,6 +70,7 @@ monogatari.assets ('images', {
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
 	'cranes': 'cranes.jpeg',
+	'memorial': 'hiroshimamemorial.jpeg',
 });
 
 
@@ -81,23 +82,35 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
+		'show background memorial with fadeIn',
 		{'Choice':{
-			'Life Before Hiroshima':{
-				'Text': 'Life Before Hiroshima',
-				'Do': 'jump Life Before Hiroshima'
+			'The Sasaki Family':{
+				'Text': 'The Sasaki Family',
+				'Do': 'jump SasakiFamily'
 			},
-			'Senbazuru':{
-				'Text': 'Senbazuru',
-				'Do': 'jump Senbazuru'
+			'Destruction of Hiroshima':{
+				'Text': 'Destruction of Hiroshima',
+				'Do': 'jump DestructionHiroshima'
 			},
-			'Life After Hiroshima':{
-				'Text': 'Life After Hiroshima',
-				'Do': 'jump Life After Hiroshima'
+			'The Aftermath':{
+				'Text': 'The Aftermath',
+				'Do': 'jump Aftermath'
 			}
 		}
+	},
+],
 
-	}
-	]
+	'SasakiFamily':[
+
+	],
+
+	'DestructionHiroshima':[
+		'vibrate 200'
+	],
+
+	'Aftermath':[
+
+	],
 });
 
 monogatari.component ('main-screen').template (() => {
