@@ -71,6 +71,7 @@ monogatari.assets ('images', {
 monogatari.assets ('scenes', {
 	'cranes': 'cranes.jpeg',
 	'memorial': 'hiroshimamemorial.jpeg',
+	'black': 'black.jpeg',
 });
 
 
@@ -101,15 +102,16 @@ monogatari.script ({
 ],
 
 	'SasakiFamily':[
-
+		'show background black',
 	],
 
 	'DestructionHiroshima':[
+		'show background black',
 		'vibrate 200 100 150 50 200 300'
 	],
 
 	'Aftermath':[
-
+		'show background black',
 	],
 });
 
