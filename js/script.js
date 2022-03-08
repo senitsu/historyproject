@@ -81,7 +81,22 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
+		{'Choice':{
+			'Life Before Hiroshima':{
+				'Text': 'Life Before Hiroshima',
+				'Do': 'jump Life Before Hiroshima'
+			},
+			'Senbazuru':{
+				'Text': 'Senbazuru',
+				'Do': 'jump Senbazuru'
+			},
+			'Life After Hiroshima':{
+				'Text': 'Life After Hiroshima',
+				'Do': 'jump Life After Hiroshima'
+			}
+		}
 
+	}
 	]
 });
 
@@ -97,8 +112,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<br/>
-        <h1>The Cranes of Hiroshima</h1>
-        <p>
+				<p>
+        <b>The Cranes of Hiroshima</b>
+				<br/>
+				<br/>
         By Senya W.
         </p>
 				</center>

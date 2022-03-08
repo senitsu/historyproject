@@ -46,12 +46,24 @@ button:hover {
 /* Main Menu Styling */
 [data-screen="main"] {
 	background-image: url("../assets/scenes/crane.jpeg");
-	color:red;
+	color:black;
 }
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
 
+}
+
+[data-screen="main"] b {
+	font-size: 200%;
+}
+
+[data-screen="main"] p {
+	background:#FFFFFF99;
+	margin-left:400px;
+	margin-right:400px;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
 /**
