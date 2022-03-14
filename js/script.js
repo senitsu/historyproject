@@ -18,7 +18,13 @@ monogatari.action ('notification').notifications ({
 		title: 'Welcome',
 		body: 'This is the Monogatari VN Engine',
 		icon: ''
-	}
+	},
+
+	'Monument':{
+        title: 'Bonus Fact',
+        body: 'This is a Hiroshima memorial statue',
+        icon: 'assets/images/notif.png'
+    },
 });
 
 // Define the Particles JS Configurations used in the game
@@ -64,7 +70,8 @@ monogatari.assets ('videos', {
 
 // Define the images used in the game.
 monogatari.assets ('images', {
-
+	siblings: "SasakiChildren.jpeg",
+	airRaidShelter: "AirRaidShelter.jpeg",
 });
 
 // Define the backgrounds for each scene.
@@ -84,6 +91,7 @@ monogatari.characters ({
 monogatari.script ({
 	'Start': [
 		'show background memorial with fadeIn',
+		'show notification Monument',
 		{'Choice':{
 			'The Sasaki Family':{
 				'Text': 'The Sasaki Family',
@@ -103,6 +111,12 @@ monogatari.script ({
 
 	'SasakiFamily':[
 		'show background black',
+		'show image siblings with fadeIn',
+		'Sadako and her brother, Masahiro, lived in the midst of World War Ⅱ.',
+		'show image airRaidShelter with fadeIn',
+		'During the war, the Allies dropped numerous bombs on the Japanese, destroying homes and cities. In response, the Japanese government set up warning sirens and bomb shelters.',
+		'The image shown here is a principle diagram of a Japenese air raid shelter. These diagrams were mass distributed so people could build shelters all across the country.',
+
 	],
 
 	'DestructionHiroshima':[
