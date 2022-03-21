@@ -72,6 +72,7 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	siblings: "SasakiChildren.jpeg",
 	airRaidShelter: "AirRaidShelter.jpeg",
+	sasakiFamily: "sadakomasahiro.jpeg",
 });
 
 // Define the backgrounds for each scene.
@@ -91,7 +92,6 @@ monogatari.characters ({
 monogatari.script ({
 	'Start': [
 		'show background memorial with fadeIn',
-		'show notification Monument',
 		{'Choice':{
 			'The Sasaki Family':{
 				'Text': 'The Sasaki Family',
@@ -113,9 +113,13 @@ monogatari.script ({
 		'show background black',
 		'show image siblings with fadeIn',
 		'Sadako and her brother, Masahiro, lived in the midst of World War Ⅱ.',
+		'hide image siblings with fadeOut',
 		'show image airRaidShelter with fadeIn',
 		'During the war, the Allies dropped numerous bombs on the Japanese, destroying homes and cities. In response, the Japanese government set up warning sirens and bomb shelters.',
-		'The image shown here is a principle diagram of a Japenese air raid shelter. These diagrams were mass distributed so people could build shelters all across the country.',
+		'The image shown here is a principle diagram of a Japenese air raid shelter, which Sadako and Masahiro often played in. Neither sibling ever realized how much danger they were in because no bombings ever occured in their town',
+		'hide image airRaidShelter with fadeOut',
+		'show image sasakiFamily with fadeIn',
+		'The entire Sasaki family lived together. Their father owned a barbershop but was enlisted in the military, so their mother ran the barbershop by herself. Their grandmother also lived with them and helped care for the children.',
 
 	],
 
