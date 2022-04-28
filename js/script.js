@@ -223,7 +223,7 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show statue with fadeIn',
+		'show background statue with fadeIn',
 		'The Sasaki family suffered immensely from the bombing of Hiroshima. They went through incredible hardship and Sadako tragically lost her life due to the radiation from the bombing. Her death and the deaths of all those who lost their lives to the atomic bombings serve as a reminder as to why a third atomic bombing should never occur.',
 		'Sadako’s cranes have become a global symbol of peace and her resilience up until the very end inspires many around the world. Additionally, Masahiro is more than just a survivor of Hiroshima. He chose to spread messages of peace and healing, instead of messages of revenge and retaliation.',
 		'The Sasaki siblings never lost hope even after they lived through the most devestating bombing ever recorded.',
