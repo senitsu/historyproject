@@ -84,6 +84,7 @@ monogatari.assets ('scenes', {
 	'black': 'black.jpeg',
 	'senbazuru': 'senbazuru.jpeg',
 	'hiroshimanow': 'hiroshimanow.jpeg',
+	'statue': 'sadako.jpeg'
 });
 
 
@@ -95,6 +96,7 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
+		'show background senbazuru with fadeIn',
 		{'Choice':{
 			'senbazuru':{
 				'Text': 'senbazuru?',
@@ -105,7 +107,6 @@ monogatari.script ({
 ],
 
 	'senbazuru':[
-		'show background senbazuru with fadeIn',
 		'Have you ever heard of senbazuru before?',
 		{'Choice':{
 			'Y':{
@@ -171,10 +172,8 @@ monogatari.script ({
 		'On August 6, 1945, air raid alarms rang throughout the city of Hiroshima as a singular American plane flew over the city. Sirens rang throughout the city and people rushed to the bomb shelters, but no bombings occured and residents were given the all clear.',
 		'Little did they know that the plane that flew overhead had just reported to the American forces that the weather conditions were ideal for the dropping of the atomic bomb.',
 		'hide image enolaGay with fadeOut',
-		'',
 		'As the Sasaki family was eating breakfast, they heard cries and shouts from the neighbors. They rushed outside to see the bomber planes flying through the sky. Everyone craned their heads up towards the sky and some even called the planes pretty.',
 		'show image bombCloud with fadeIn',
-		'',
 		'The Sasaki family were nearly back inside their house when the sky became brighter than it ever had been before. The American planes had just dropped the atomic bomb.',
 		'Sadako was blown into the yard while the rest of the family became stuck under the remains of their home.',
 		'hide image bombCloud',
@@ -208,12 +207,12 @@ monogatari.script ({
 		'She had managed to fold over thirteen hundred cranes.',
 		'Her wish?',
 		'To live a a normal life, surrounded by her friends and family.',
-		'hide image sadako',
+		'hide image sadako with fadeOut',
 		'jump Ending',
 	],
 
 	'Ending':[
-		'show background memorial',
+		'show background memorial with fadeIn',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Closing',
@@ -221,6 +220,14 @@ monogatari.script ({
 			}
 		}
 		}
+	],
+
+	'Closing':[
+		'show statue with fadeIn',
+		'The Sasaki family suffered immensely from the bombing of Hiroshima. They went through incredible hardship and Sadako tragically lost her life due to the radiation from the bombing. Her death and the deaths of all those who lost their lives to the atomic bombings serve as a reminder as to why a third atomic bombing should never occur.',
+		'Sadako’s cranes have become a global symbol of peace and her resilience up until the very end inspires many around the world. Additionally, Masahiro is more than just a survivor of Hiroshima. He chose to spread messages of peace and healing, instead of messages of revenge and retaliation.',
+		'The Sasaki siblings never lost hope even after they lived through the most devestating bombing ever recorded.',
+		'end'
 	]
 });
 
